@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    
+}
+h1{
+    font-family: 'Jua', sans-serif;
+    font-size: 35px;
+    margin: 0px;
+}
+h4{
+    margin-top: 0;
+    margin-bottom:30px ;
+}
+body{
+    margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+#page {
+    
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    width:70%;
+  
+}
+
+div{
+    display:block;
+}
+
+#left-aside{
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 40px;
+    float: left;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    z-index: 1001;
+    background-color: rgb(242, 243, 247);
+}
+
+#left-aside img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.menu-wrap{
+    width: 50%;
+    margin: 0 auto;
+}
+.menu{
+    text-align: center;
+    
+}
+
+.menu li {
+    
+    text-align: center;
+    font-size: 15px;
+    list-style: none;
+    line-height:2.3;
+ 
+  }
+  .menu-wrap a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+  
+.menu-wrap li.on a {
+    display: block;
+     background-color: #333;
+     color:white;
+     border-radius:30px;
+    
+    }
+
+#main {
+    width: calc(100% - 300px); /*  왼쪽 aisde가 300px 뺴기  */
+    float: right;
+    background-color: aliceblue;
+}
+
+.section-01,.section-02,.section-03,.section-04,.section-05 {
+    border: 1rem solid;
+    padding-left: 2em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    clear: both;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    border-color: aqua;
+}
