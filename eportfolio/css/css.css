@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background-color: #f7f2f2;
+}
+.top{
+    margin-top: 25px ;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    top: 0;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+
+.menu_list {
+    position: relative;
+    background: rgba(0,0,0,4%);
+    border-radius: 23px;
+    margin: 15px 0;
+}
+
+
+a{
+    text-decoration: none;
+    color:black;
+    padding: 8px;
+}
+a:hover{ 
+    background-color: rgb(177, 174, 174);
+    border-radius: 20px;
+
+}
+#active a{
+    background-color: white;
+    border-radius: 20px;
+}
+.menu_list ul {
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    z-index: 1;
+    margin: 0;
+}
+
+.menu_list ul li{
+    margin:5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.maingrid {
+    padding: 40px 0 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 240px 240px 240px;
+    grid-gap: 1rem;
+}
+
+.maingrid .box-2w-about {
+    grid-column: span 2;
+    background-color: aqua;
+}
+.maingrid .box-2h-project {
+    grid-row: span 2;
+    background-color: rgb(79, 192, 192);
+}
+.maingrid .box-1w-time {
+    grid-column: span 1;
+    background-color: rgb(83, 196, 175);
+}
+
+.maingrid .box-1w-certificate {
+    grid-column: span 1;
+    background-color: rgb(123, 167, 159);
+}
+.maingrid .box-1w-school {
+    grid-column: span 1;
+    background-color: rgb(87, 119, 113);
+}
+.maingrid .box-1w-time {
+    grid-column: span 1;
+    background-color: rgb(83, 196, 175);
+}
+
+.maingrid .box-1w-skills {
+    grid-column: span 2;
+    background-color: rgb(172, 228, 218);
+}
