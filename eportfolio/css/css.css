@@ -132,8 +132,20 @@ a:hover{
 }
 
 
+.skills{
+    display: flex;
+    flex-direction: row;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+    height: 240px;
+    overflow: hidden;
+}
 
-
+.skills img{
+    margin: 10px;
+    width: 130px;
+    align-items: center;
+}
 
 
 @media screen and (max-width:1023px) {
@@ -143,7 +155,11 @@ a:hover{
     .header{
         width: 100%;
     }
-
+    .skills img{
+        margin: 10px;
+        width: 100px;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 783px) 
