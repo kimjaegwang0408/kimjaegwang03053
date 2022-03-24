@@ -102,6 +102,38 @@ a:hover{
     grid-column: span 2;
     background-color: rgb(172, 228, 218);
 }
+.box-2w-about{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.flex_about{
+    display: flex;
+    background-color: antiquewhite;
+    align-items: center;
+    padding:30px ;
+    margin: 10px;
+    border-radius: 30px;
+}
+.item{
+    border-radius: 30px;
+    text-align: center;
+}
+.about_box_1{
+    padding: 10px;
+}
+.about_box_2{
+    margin: 20px;
+}
+
+#imggg{
+    border-radius: 30px;
+}
+
+
+
+
 
 
 @media screen and (max-width:1023px) {
@@ -114,11 +146,11 @@ a:hover{
 
 }
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 783px) 
 {
     .maingrid {
-        grid-template-columns: repeat(1,1fr 1fr);
-        grid-template-rows: 240px 240px 240px 240px 240px 240px;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 240px 480px 240px 240px 240px 240px;
     }
     .maingrid .box-2h-project {
         grid-row: span 1;
