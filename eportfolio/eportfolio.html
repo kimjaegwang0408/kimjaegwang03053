@@ -1,196 +1,82 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding:0;
-}
+<!doctype html>
+<html>
 
-body{
-    background-color: #f7f2f2;
-}
-.top{
-    margin-top: 25px ;
-}
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    top: 0;
-    padding: 0px;
-    margin: 0 auto;
-}
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=devide-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/css.css">
+  <title>20192321 김재광 portfolio</title>
+</head>
 
+<body>
+  <div class="top">
+    <div class="header">
+      <div class="logo">
+        <h4>20192321</h4>
+        <h1>Kimjaegwang</h1>
+      </div>
+      <div class="nav_menu">
+        <div class="menu_back">
+          <div class="menu_list">
+            <ul class="menu__list">
+              <li id="active"><a href="#">Home</a></li>
+              <li><a href="#">About & Skills</a></li>
+              <li><a href="#">Project</a></li>
+              <li><a href="#">Time tblae</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="time">
+        <h1>포트폴리오</h1>
+      </div>
+    </div>
+  </div>
 
-.menu_list {
-    position: relative;
-    background: rgba(0,0,0,4%);
-    border-radius: 23px;
-    margin: 15px 0;
-}
+  <div class="container">
+    <div class="maingrid">
 
+      <div class="item box-about box-2w-about">
+        <div class="flex_about">
+          <div class="about_box_1">
+            <img id="imggg" src="https://via.placeholder.com/150" alt="샘플이미지">
+          </div>
+          <div class="about_box_2">
+            <h3>안녕하세요</h3><br />대전대학교에 재학중인 20192321 김재광 입니다.<br /><br />이 페이지는 포트폴리오 페이지 입니다
+          </div>
+        </div>
+      </div>
+      <div class="item box-project box-2h-project">
+        <div class="flex_project">
+          간단한 프로젝트 소개
+        </div>
+      </div>
+      <div class="item box-time box-1w-time">
+        <div class="flex_time">
+          시간표
+        </div>
+      </div>
+      <div class="item box-certificate box-1w-certificate">
+        <div class="flex_certificate">
+          자격증
+        </div>
+      </div>
+      <div class="item box-school box-1w-school">
+        <div class="flex_school">
+          학교
+        </div>
+      </div>
+      <div class="item box-skills box-1w-skills">
+        <div class="skills">
+          <img src="img/c.png" alt="c">
+          <img src="img/java.png" alt="java">
+          <img src="img/py.png" alt="py">
+          <img src="img/html.png" alt="html5">
+          <img src="img/js.png" alt="js">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 
-a{
-    text-decoration: none;
-    color:black;
-    padding: 8px;
-}
-a:hover{ 
-    background-color: rgb(177, 174, 174);
-    border-radius: 20px;
-
-}
-#active a{
-    background-color: white;
-    border-radius: 20px;
-}
-.menu_list ul {
-    overflow: hidden;
-    list-style: none;
-    position: relative;
-    display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 14px;
-    z-index: 1;
-    margin: 0;
-}
-
-.menu_list ul li{
-    margin:5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-weight: 600;
-}
-
-.maingrid {
-    padding: 40px 0 80px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 240px 240px 240px;
-    grid-gap: 1rem;
-}
-
-.maingrid .box-2w-about {
-    grid-column: span 2;
-    background-color: aqua;
-}
-.maingrid .box-2h-project {
-    grid-row: span 2;
-    background-color: rgb(79, 192, 192);
-}
-.maingrid .box-1w-time {
-    grid-column: span 1;
-    background-color: rgb(83, 196, 175);
-}
-
-.maingrid .box-1w-certificate {
-    grid-column: span 1;
-    background-color: rgb(123, 167, 159);
-}
-.maingrid .box-1w-school {
-    grid-column: span 1;
-    background-color: rgb(87, 119, 113);
-}
-.maingrid .box-1w-time {
-    grid-column: span 1;
-    background-color: rgb(83, 196, 175);
-}
-
-.maingrid .box-1w-skills {
-    grid-column: span 2;
-    background-color: rgb(172, 228, 218);
-}
-.box-2w-about{
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-}
-
-.flex_about{
-    display: flex;
-    background-color: antiquewhite;
-    align-items: center;
-    padding:30px ;
-    margin: 10px;
-    border-radius: 30px;
-}
-.item{
-    border-radius: 30px;
-    text-align: center;
-}
-.about_box_1{
-    padding: 10px;
-}
-.about_box_2{
-    margin: 20px;
-}
-
-#imggg{
-    border-radius: 30px;
-}
-
-
-.skills{
-    display: flex;
-    flex-direction: row;  /* make main axis vertical */
-    justify-content: center; /* center items vertically, in this case */
-    align-items: center;     /* center items horizontally, in this case */
-    height: 240px;
-    overflow: hidden;
-}
-
-.skills img{
-    margin: 10px;
-    width: 130px;
-    align-items: center;
-}
-
-
-
-
-
-@media screen and (max-width:1023px) {
-    body{
-        margin: 10px;
-    }
-    .header{
-        width: 100%;
-    }
-    .skills img{
-        margin: 10px;
-        width: 100px;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 783px) 
-{
-    .maingrid {
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: 240px 480px 240px 240px 240px 240px;
-    }
-    .maingrid .box-2h-project {
-        grid-row: span 1;
-    }
-    .maingrid .item{
-        grid-column: span 2;
-      
-    }
-    .header{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .nav_menu{
-        width: 100%;
-    }
-    .menu__list{
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .time{
-        display:none;
-    }
-}
+</html>
