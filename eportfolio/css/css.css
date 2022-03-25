@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding:0;
+
 }
 
 body{
@@ -29,17 +30,22 @@ body{
 }
 
 
-a{
+.menu__list > li> a{
     text-decoration: none;
     color:black;
     padding: 8px;
-}
-a:hover{ 
-    background-color: rgb(177, 174, 174);
-    border-radius: 20px;
 
 }
-#active a{
+.flex_school:hover{
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+}
+
+.menu__list > li> a:hover{ 
+    background-color: rgb(177, 174, 174);
+    border-radius: 20px;
+}
+.menu__list > #active a{
     background-color: white;
     border-radius: 20px;
 }
@@ -134,9 +140,18 @@ a:hover{
 
 .skills{
     display: flex;
-    flex-direction: row;  /* make main axis vertical */
-    justify-content: center; /* center items vertically, in this case */
-    align-items: center;     /* center items horizontally, in this case */
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;    
+    height: 240px;
+    overflow: hidden;
+}
+
+.flex_school{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
     height: 240px;
     overflow: hidden;
 }
