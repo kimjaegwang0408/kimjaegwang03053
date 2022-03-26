@@ -6,10 +6,18 @@
   <meta name="viewport" content="width=devide-width, initial-scale=1" />
   <link rel="stylesheet" href="css/css.css">
   <title>20192321 김재광 portfolio</title>
+  <script src="https://kit.fontawesome.com/0249a61453.js" crossorigin="anonymous">
+
+
+  </script>
+
 </head>
 
 <body>
   <div class="top">
+    <a href="#" class="nav_toggleBtn">
+        <i class="fa-solid fa-bars" style="color:black;"></i>
+    </a>
     <div class="header">
       <div class="logo">
         <h4>20192321</h4>
@@ -26,6 +34,8 @@
             </ul>
           </div>
         </div>
+     
+        </a>
       </div>
       <div class="time">
         <h1>포트폴리오</h1>
@@ -39,7 +49,7 @@
       <div class="item box-about box-2w-about">
         <div class="flex_about">
           <div class="about_box_1">
-            <img id="imggg" src="image/profile.jpg" alt="샘플이미지" style="width:150px;">
+            <img id="imggg" src="image/profile.jpg" alt="샘플이미지">
           </div>
           <div class="about_box_2">
             <h3>안녕하세요</h3><br />대전대학교에 재학중인 20192321 김재광 입니다.<br /><br />이 페이지는 포트폴리오 페이지 입니다
@@ -49,7 +59,28 @@
       <div class="item box-project box-2h-project">
         <div class="flex_project">
           간단한 프로젝트 소개
+          <ul>
+          <li>
+            <a href="#">
+          <div class="card">
+            <div class="top">예제 프로젝트</div>
+            <div class="bottom">프로젝트 소개</div>
+            <img id = "mimg" src="https://via.placeholder.com/300x220" alt="">
+
+          </div>
+        </a>
+        </li>
+      <a href="#">
+        <li>
+          <div class="card">
+            <div class="top">예제 프로젝트</div>
+            <div class="bottom">프로젝트 소개</div>
+            <img id = "mimg" src="https://via.placeholder.com/300x220" alt="">
+          </div>
+        </a>
+      </li>
         </div>
+        </ul>
       </div>
       <div class="item box-time box-1w-time">
         <div class="flex_time">
@@ -83,5 +114,12 @@
     </div>
   </div>
 </body>
+<script defer>
+const toggleBtn = document.querySelector('.nav_toggleBtn');
+const menu = document.querySelector('.nav_menu');
 
+toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+</script>
 </html>
