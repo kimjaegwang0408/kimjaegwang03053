@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/css.css">
-      <script src="https://kit.fontawesome.com/0249a61453.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/0249a61453.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
     <title>portfolio</title>
 </head>
 <body>
@@ -19,21 +21,26 @@
 
             <!----------- 네비게이션-->
                 <ul class="navbar__menu">
-                    <li class="acitve">
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#">Timetable</a>
-                    </li>
-                    <li>
-                        <a href="#">Project</a>
-                    </li>
+                    <a class="Anchor" href="#Home" >
+                    <li class="active" id="liactive">
+                        Home
+                    </li></a>
+                    <a class="Anchor" href="#About" >
+                    <li class="">
+                        About
+                    </li></a>
+                    <a  class="Anchor" href="#Skills">
+                    <li class="">
+                        Skills
+                    </li></a>
+                    <a class="Anchor" href="#Timetable">
+                    <li class="">
+                        Timetable
+                    </li></a>
+                    <a class="Anchor" href="#Project">
+                    <li class="">
+                        Project
+                    </li></a>
                 </ul>
             </div>
             
@@ -49,23 +56,23 @@
     <!-- 메인 영역-->
     <div class="main">
         <!-- 섹션 home-->
-        <section class="Home">Home </section>
+        <section class="Home" id="Home">Home </section>
 
     
         <!-- 섹션 About-->
-        <section class="About">About </section>
+        <section class="About" id="About">About </section>
     
 
         <!-- 섹션 Skills-->
-        <section class="Skills">Skills </section>
+        <section class="Skills" id="Skills">Skills </section>
 
     
         <!-- 섹션 Timetable-->
-        <section class="Timetable">Timetable </section>
+        <section class="Timetable" id="Timetable">Timetable </section>
 
     
         <!-- 섹션 Project-->
-        <section class="Project">Project </section>
+        <section class="Project" id="Project">Project </section>
     
     </div>
 
