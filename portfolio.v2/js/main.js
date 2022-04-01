@@ -1,3 +1,4 @@
+
 window.addEventListener("wheel", function(e){
     e.preventDefault();
 },{passive : false});
@@ -50,7 +51,23 @@ $(function () {
             }) ;
                 
                 });
+                $("#toggle__button").click(function() {
+                    $(this).toggleClass("on");
+                    $("#menu").slideToggle();
+                  });
+
+const toggleBtn = document.querySelector('#toggle__button');
+const menu2 = document.querySelector('.navbar__menu');
+const icons = document.querySelector('.navbar__lcons');
+const menu3 = document.querySelector('.navbar');
+toggleBtn.addEventListener('click', () =>{
+    menu2.classList.toggle('active');
+    icons.classList.toggle('active');
+    menu3.classList.toggle('active');
+   
+});
 
 
 });
+
 
