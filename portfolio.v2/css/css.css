@@ -110,6 +110,39 @@ li:hover{
     background-color:darkolivegreen;
 }
 
+/* 시간표 */
+
+
+.Firstyear{grid-area: First;}
+.Secondyear{grid-area: Second;}
+.Tirthyear{grid-area: Tirth;}
+.Fourthyear{grid-area: Fourth;}
+.tablemenu1{grid-area: tablemenua1;
+margin:0 auto;}
+.tablemenu2{grid-area: tablemenua2;
+    margin:0 auto;}
+
+.oneone{grid-area: oneone;
+margin:0 auto;}
+.twotwo{grid-area: twotwo;
+    margin:0 auto;}
+
+.Timetable{
+    display: grid;
+    background-color: rgb(182, 127, 255);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 50px 1fr;
+    grid-template-areas:
+    "First  Second  Tirth   Fourth"
+    "oneone oneone  twotwo  twotwo"
+    "tablemenua1 tablemenua1  tablemenua2  tablemenua2";
+    text-align: center;
+
+}
+
+
+
+
 @media screen and (max-width:768px){
     .navbar {
         display:flex;
