@@ -1,9 +1,10 @@
-<!DOCTYPE html> <!-- subjectTable1.html-->
-<html lang="ko">
+<!doctype html> <!-- subjectTable1.html -->
+<html>
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
     <style>
         table,
         thead,
@@ -24,105 +25,109 @@
         .subject2 {
             background-color: #FAF4C0;
         }
-
+        .subject3 {
+            background-color: #3a350c;
+            color:azure
+        }
+        .subject4 {
+            background-color: #9ad1af;
+        
+        }
         th,
         td {
-            width: 50px;
+            width: 75px;
+            height: 50px;
         }
     </style>
-    <title>HTML5 시간표</title>
 </head>
 
 <body>
-<div class="tablemenu1"><table class="tg" style="undefined; width: 246px">
-            <colgroup>
-            <col style="width: 41px">
-            <col style="width: 41px">
-            <col style="width: 41px">
-            <col style="width: 41px">
-            <col style="width: 41px">
-            <col style="width: 41px">
-            </colgroup>
-            <thead>
-              <tr>
-                <th class="tg-baqh">시간</th>
-                <th class="tg-baqh">월</th>
-                <th class="tg-baqh">화</th>
-                <th class="tg-baqh">수</th>
-                <th class="tg-baqh">목</th>
-                <th class="tg-baqh">금</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="tg-baqh">9</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh" rowspan="2">캡스톤</td>
-              </tr>
-              <tr>
-                <td class="tg-baqh">10</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-              </tr>
-              <tr>
-                <td class="tg-baqh">11</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-              </tr>
-              <tr>
-                <td class="tg-baqh">12</td>
-                <td class="tg-baqh">멀티</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-              </tr>
-              <tr>
-                <td class="tg-baqh">1</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh" rowspan="3">네트워크보안</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh" rowspan="2">멀티</td>
-                <td class="tg-baqh"></td>
-              </tr>
-              <tr>
-                <td class="tg-baqh">2</td>
-                <td class="tg-baqh">캡스톤</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-              </tr>
-              <tr>
-                <td class="tg-baqh">3</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh" rowspan="2">인터넷</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-              </tr>
-              <tr>
-                <td class="tg-baqh">4</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-              </tr>
-              <tr>
-                <td class="tg-baqh">5</td>
-                <td class="tg-baqh">인터넷</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-              </tr>
-            </tbody>
-            </table>
-</body>
+    <table>
+        <caption>&lt;김재광&gt; 시간표</caption>
+        <thead>
+            <tr>
+                <th>시간</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>1교시</td>
+                <td ></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2" class="subject1">캡스톤<br/>디자인</td>
 
-</html>
+            </tr>
+            <tr>
+                <td>2교시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>3교시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>4교시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>5교시</td>
+                <td></td>
+                <td rowspan="3" class="subject2">네트워크 보안</td>
+                <td></td>
+                <td rowspan="2" class="subject4">멀티<br/>미디어<br/>및<br/>게임<br/>시스템</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6교시</td>
+                <td></td>
+                <td></td>
+    
+                
+            </tr>
+            <tr>
+                <td>7교시</td>
+                <td></td>
+                <td  rowspan="2" class="subject3">인터넷<br/>응용</td>
+                <td></td>
+           
+               
+            </tr>
+            <tr>
+                <td>8교시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>9교시</td>
+                <td class="subject3">인터넷<br/>응용</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
