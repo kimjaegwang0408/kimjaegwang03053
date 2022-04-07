@@ -4,6 +4,8 @@ window.addEventListener("wheel", function(e){
 },{passive : false});
 
 $(function () {
+    var mHtml = $("html");
+    var page = 1;
     $(".Anchor").on("click", function () {
         var headerHeight = $(".navbar").outerHeight();
         var href = $(this).attr("href");
@@ -14,9 +16,27 @@ $(function () {
         $('li').removeClass('active');
         $(active).addClass('active');
     });
+    /// 페이지 스크롤, 클릭시 
+    $('li').click(function(){
+        var PageTarget = this.id;
+        if (PageTarget == "A0"){
+            page = 1;
+        }
+        else if (PageTarget == "A1"){
+            page = 2;
+        }
+        else if (PageTarget == "A2"){
+            page = 3;
+        }
+        else if (PageTarget == "A3"){
+            page = 4;
+        }
+        else if (PageTarget == "A4"){
+            page = 5;
+        }
 
-    var mHtml = $("html");
-    var page = 1;
+    });
+
     mHtml.animate({ scrollTop: 0 }, 10);
     $(window).on("wheel", function (e) {
         var scltop = $(window).scrollTop();
@@ -68,6 +88,6 @@ toggleBtn.addEventListener('click', () =>{
 });
 
 
-});
 
+});
 
