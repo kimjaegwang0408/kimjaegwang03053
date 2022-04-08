@@ -7,14 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/0249a61453.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-    <style type="text/css">
-      .tg  {border-collapse:collapse;border-spacing:0;}
-      .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-        overflow:hidden;padding:10px 5px;word-break:normal;}
-      .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-        font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-      .tg .tg-baqh{text-align:center;vertical-align:top}
-      </style>
+
     <!-- google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,23 +27,23 @@
             <!----------- 네비게이션-->
                 <ul class="navbar__menu">
                     <a class="Anchor" href="#Home" >
-                    <li class="active">
+                    <li class="active" id="A0">
                         Home
                     </li></a>
                     <a class="Anchor" href="#About" >
-                    <li class="">
+                    <li class="" id="A1">
                         About
                     </li></a>
                     <a  class="Anchor" href="#Skills">
-                    <li class="">
+                    <li class="" id="A2">
                         Skills
                     </li></a>
                     <a class="Anchor" href="#Timetable">
-                    <li class="">
+                    <li class="" id="A3">
                         Timetable
                     </li></a>
                     <a class="Anchor" href="#Project">
-                    <li class="">
+                    <li class="" id="A4">
                         Project
                     </li></a>
                 </ul>
@@ -92,184 +85,181 @@
           <div class="Fourthyear">4학년</div>
           <div class="oneone">1학기</div>
           <div class="twotwo">2학기</div>
-          <div class="tablemenu1"><table class="tg" style="undefined; table-layout: fixed; width: 246px">
-            <colgroup>
-            <col style="width: 41px">
-            <col style="width: 41px">
-            <col style="width: 41px">
-            <col style="width: 41px">
-            <col style="width: 41px">
-            <col style="width: 41px">
-            </colgroup>
+          <div class="tablemenu1">              <table>
             <thead>
-              <tr>
-                <th class="tg-baqh"></th>
-                <th class="tg-baqh">월</th>
-                <th class="tg-baqh">화</th>
-                <th class="tg-baqh">수</th>
-                <th class="tg-baqh">목</th>
-                <th class="tg-baqh">금</th>
-              </tr>
+                <tr>
+                    <th>시간</th>
+                    <th>월</th>
+                    <th>화</th>
+                    <th>수</th>
+                    <th>목</th>
+                    <th>금</th>
+                </tr>
             </thead>
+            
             <tbody>
-              <tr>
-                <td class="tg-baqh">9</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh" rowspan="2">캡스톤</td>
-              </tr>
-              <tr>
-                <td class="tg-baqh">10</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-              </tr>
-              <tr>
-                <td class="tg-baqh">11</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-              </tr>
-              <tr>
-                <td class="tg-baqh">12</td>
-                <td class="tg-baqh">멀티</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-              </tr>
-              <tr>
-                <td class="tg-baqh">1</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh" rowspan="3">네트워크보안</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh" rowspan="2">멀티</td>
-                <td class="tg-baqh"></td>
-              </tr>
-              <tr>
-                <td class="tg-baqh">2</td>
-                <td class="tg-baqh">캡스톤</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-              </tr>
-              <tr>
-                <td class="tg-baqh">3</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh" rowspan="2">인터넷</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-              </tr>
-              <tr>
-                <td class="tg-baqh">4</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-              </tr>
-              <tr>
-                <td class="tg-baqh">5</td>
-                <td class="tg-baqh">인터넷</td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-                <td class="tg-baqh"></td>
-              </tr>
+                <tr>
+                    <td>1교시</td>
+                    <td ></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="2" class="subject1">캡스톤<br/>디자인</td>
+    
+                </tr>
+                <tr>
+                    <td>2교시</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+    
+                </tr>
+                <tr>
+                    <td>3교시</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+    
+                </tr>
+                <tr>
+                    <td>4교시</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+    
+                </tr>
+                <tr>
+                    <td>5교시</td>
+                    <td></td>
+                    <td rowspan="3" class="subject2">네트워크 보안</td>
+                    <td></td>
+                    <td rowspan="2" class="subject4">멀티<br/>미디어<br/>및<br/>게임<br/>시스템</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6교시</td>
+                    <td></td>
+                    <td></td>
+        
+                    
+                </tr>
+                <tr>
+                    <td>7교시</td>
+                    <td></td>
+                    <td  rowspan="2" class="subject3">인터넷<br/>응용</td>
+                    <td></td>
+               
+                   
+                </tr>
+                <tr>
+                    <td>8교시</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+    
+                </tr>
+                <tr>
+                    <td>9교시</td>
+                    <td class="subject3">인터넷<br/>응용</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
             </tbody>
+        </table></div>
+            <div class="tablemenu2">
+              <table>
+                <thead>
+                    <tr>
+                        <th>시간</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>1교시</td>
+                        <td ></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="2" class="subject1">캡스톤<br/>디자인</td>
+        
+                    </tr>
+                    <tr>
+                        <td>2교시</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+        
+                    </tr>
+                    <tr>
+                        <td>3교시</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+        
+                    </tr>
+                    <tr>
+                        <td>4교시</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+        
+                    </tr>
+                    <tr>
+                        <td>5교시</td>
+                        <td></td>
+                        <td rowspan="3" class="subject2">네트워크 보안</td>
+                        <td></td>
+                        <td rowspan="2" class="subject4">멀티<br/>미디어<br/>및<br/>게임<br/>시스템</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>6교시</td>
+                        <td></td>
+                        <td></td>
+            
+                        
+                    </tr>
+                    <tr>
+                        <td>7교시</td>
+                        <td></td>
+                        <td  rowspan="2" class="subject3">인터넷<br/>응용</td>
+                        <td></td>
+                   
+                       
+                    </tr>
+                    <tr>
+                        <td>8교시</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+        
+                    </tr>
+                    <tr>
+                        <td>9교시</td>
+                        <td class="subject3">인터넷<br/>응용</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
             </table></div>
-            <div class="tablemenu2"><table class="tg" style="undefined; table-layout: fixed; width: 246px">
-              <colgroup>
-              <col style="width: 41px">
-              <col style="width: 41px">
-              <col style="width: 41px">
-              <col style="width: 41px">
-              <col style="width: 41px">
-              <col style="width: 41px">
-              </colgroup>
-              <thead>
-                <tr>
-                  <th class="tg-baqh"></th>
-                  <th class="tg-baqh">월</th>
-                  <th class="tg-baqh">화</th>
-                  <th class="tg-baqh">수</th>
-                  <th class="tg-baqh">목</th>
-                  <th class="tg-baqh">금</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="tg-baqh">9</td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh" rowspan="2">캡스톤</td>
-                </tr>
-                <tr>
-                  <td class="tg-baqh">10</td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                </tr>
-                <tr>
-                  <td class="tg-baqh">11</td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                </tr>
-                <tr>
-                  <td class="tg-baqh">12</td>
-                  <td class="tg-baqh">멀티</td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                </tr>
-                <tr>
-                  <td class="tg-baqh">1</td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh" rowspan="3">네트워크보안</td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh" rowspan="2">멀티</td>
-                  <td class="tg-baqh"></td>
-                </tr>
-                <tr>
-                  <td class="tg-baqh">2</td>
-                  <td class="tg-baqh">캡스톤</td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                </tr>
-                <tr>
-                  <td class="tg-baqh">3</td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh" rowspan="2">인터넷</td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                </tr>
-                <tr>
-                  <td class="tg-baqh">4</td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                </tr>
-                <tr>
-                  <td class="tg-baqh">5</td>
-                  <td class="tg-baqh">인터넷</td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                  <td class="tg-baqh"></td>
-                </tr>
-              </tbody>
-              </table></div>
           
       
 
