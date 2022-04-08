@@ -111,7 +111,38 @@ li:hover{
 }
 
 /* 시간표 */
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
 
+.subject1 {
+    background-color: lightgray;
+}
+
+.subject2 {
+    background-color: #FAF4C0;
+}
+.subject3 {
+    background-color: #3a350c;
+    color:azure
+}
+.subject4 {
+    background-color: #9ad1af;
+
+}
+th,
+td {
+    width: 60px;
+    height: 50px;
+}
 
 .Firstyear{grid-area: First;}
 .Secondyear{grid-area: Second;}
