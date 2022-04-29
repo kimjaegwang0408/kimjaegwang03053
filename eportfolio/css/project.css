@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background-color: #f7f2f2;
+}
+li{
+    list-style: none;
+    float: left;
+    padding:10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    color:black;
+}
+
+header{
+    margin: 0 auto;
+    margin-top: 65px;
+    margin-bottom: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 7vw;
+
+}
+nav{
+    border-radius: 23px;
+    background-color: #00000021;
+    padding: 5px;
+}
+
+nav ul a{
+    font-size: 14px;
+}
+
+nav ul li:hover{
+    background-color:white;
+    border-radius: 20px;
+}
+
+.active{
+    background-color: white;
+    border-radius: 20px;
+}
+a{
+    color: black;
+    text-decoration-line: none;
+}
+section{
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    height: 600px;
+    background-color: white;
+    border-radius: 24px;
+    padding: 35px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section a:hover .project_card{
+    background-color: rgb(221, 221, 198);
+}
+
+.project_card{
+    display: flex;
+    width: 550px;
+    height: 240px;
+    align-items: center;
+    background-color: beige;
+
+}
+
+.project_card .project_img{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
