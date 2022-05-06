@@ -1,6 +1,6 @@
 $(function () {
 $(".time_button div").click(function() {
-    var x = this.className;
+    var x = this.className; 
     $('.time_button div').removeAttr('id');
     $(this).attr('id' , 'checked');
     console.log(x);
