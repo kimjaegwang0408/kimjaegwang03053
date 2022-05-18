@@ -21,7 +21,7 @@ header {
     align-items: center;
 }
 
-/* 헤더 nav 부분 css */
+
 
 .nav {
     border-radius: 23px;
@@ -53,6 +53,7 @@ a{
     background-color: white;
     border-radius: 20px;
 }
+
 
 
 /* 섹션 부분 css */
