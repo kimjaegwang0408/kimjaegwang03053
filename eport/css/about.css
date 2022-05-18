@@ -21,6 +21,29 @@ header {
     align-items: center;
 }
 
+/* 헤더 nav 부분 css */
+
+.nav {
+    border-radius: 23px;
+    background-color: #00000021;
+    padding: 5px;
+}
+
+li {
+    list-style: none;
+    float: left;/* 가로 정렬 */
+    margin-left: 2px;
+    margin-right: 2px;
+    color: black;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+}
+
 .active {
     background-color: white;
     border-radius: 20px;
@@ -29,22 +52,6 @@ header {
 .nav ul li:hover {
     background-color: white;
     border-radius: 20px;
-}
-
-li {
-    list-style: none;
-    float: left;
-    /* 가로 정렬 */
-    padding: 10px;
-    margin-left: 2px;
-    margin-right: 2px;
-    color: black;
-}
-
-.nav {
-    border-radius: 23px;
-    background-color: #00000021;
-    padding: 5px;
 }
 
 
