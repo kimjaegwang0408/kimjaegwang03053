@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7f2f2;
+}
+
+/* 헤더 부분 css */
+
+header {
+    display: flex;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 헤더 nav 부분 css */
+
+.nav {
+    border-radius: 23px;
+    background-color: #00000021;
+    padding: 5px;
+}
+
+li {
+    list-style: none;
+    float: left;/* 가로 정렬 */
+    margin-left: 2px;
+    margin-right: 2px;
+    color: black;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+}
+
+.active {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.nav ul li:hover {
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+/* 섹션 부분 css */
+section {
+    display: flex;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 18px 0 18px 0;
+    border-radius: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_card {
+    display: flex;
+    width: 45%;
+    min-width: 420px;
+    height: auto;
+    align-items: center;
+    background-color: beige;
+    margin: 5px;
+}
+
+.project_img img {
+    margin-right: 30px;
+}
+
+section .project_card:hover {
+    background-color: rgb(221, 221, 198);
+}
+
+@media all and (max-width:768px) {
+    img{
+        width: 120px;
+        height: 120px;
+    }
+    section {
+        width: 85%;
+    }
+
+    header {
+        width: 80%;
+        flex-wrap: wrap;
+        /*영역내에서 벗어나지 않게 여러 행으로 나누어 표현*/
+        justify-content: space-around;
+    }
+
+    .nav {
+        margin: 0 auto;
+        order: 3;
+        /*3번째 배치로 바꾸기 위해서*/
+
+    }
+
+    .project_card {
+        min-width: 90%;
+    }
+
+    .project_img img {
+        width: 120px;
+        margin-right: 30px;
+    }
+}

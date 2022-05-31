@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7f2f2;
+}
+
+/* 헤더 부분 css */
+
+header {
+    display: flex;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    border-radius: 23px;
+    background-color: #00000021;
+    padding: 5px;
+}
+
+li {
+    list-style: none;
+    float: left;/* 가로 정렬 */
+    margin-left: 2px;
+    margin-right: 2px;
+    color: black;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+}
+
+.active {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.nav ul li:hover {
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+section {
+    display: flex;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 18px 0 18px 0;
+    border-radius: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section div {
+    border-radius: 32px;
+}
+
+section .time_button {
+    margin: 0 auto;
+    margin-bottom: 5px;
+    display: flex;
+    width: 900px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.time_button div a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.time_button div {
+    display: flex;
+    width: 20%;
+    height: 80%;
+    background-color: beige;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#checked {
+    background-color: rgb(143, 143, 100);
+}
+
+.time_button div:hover {
+    background-color: rgb(143, 143, 100);
+}
+
+
+
+
+section .time_table {
+    margin: 0 auto;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.time_table1 {
+    margin-right: 30px;
+}
+
+.time_table_button_1 {
+    display: none;
+}
+
+.time_table_button_2 {
+    display: none;
+}
+
+.time_table_button_3 {
+    display: none;
+}
+
+.time_table_button_4 {
+    display: block;
+}
+
+caption {
+    margin: 15px;
+}
+
+
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.subject1 {
+    background-color: lightgray;
+}
+
+.subject2 {
+    background-color: #FAF4C0;
+}
+
+.subject3 {
+    background-color: #3a350c;
+    color: azure
+}
+
+.subject4 {
+    background-color: #9ad1af;
+}
+
+.subject5 {
+    background-color: #186279;
+    color: white;
+}
+
+.subject6 {
+    background-color: #e4e495;
+
+}
+
+th,
+td {
+    width: 55px;
+    height: 50px;
+}
+
+
+@media all and (max-width:768px) {
+
+    section {
+        width: 85%;
+    }
+
+    header {
+        width: 80%;
+        flex-wrap: wrap;
+        /*영역내에서 벗어나지 않게 여러 행으로 나누어 표현*/
+        justify-content: space-around;
+    }
+
+    .nav {
+        margin: 0 auto;
+        order: 3;
+        /*3번째 배치로 바꾸기 위해서*/
+    }
+
+    .time_table {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .time_table1 {
+        margin-right: 0px;
+    }
+
+}
